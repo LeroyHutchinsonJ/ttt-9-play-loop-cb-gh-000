@@ -13,11 +13,14 @@ end
 
 def move(board, index, current_player = "X")
   board[index] = current_player
-  count = 0
+
   if(count%2 == 0 || count==0)
     puts "Current player O"
     count+=1
+  else
+    puts "Current player X"
   end
+  count = 0
 end
 
 def position_taken?(board, location)
