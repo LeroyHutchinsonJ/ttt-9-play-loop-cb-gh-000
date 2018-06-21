@@ -15,10 +15,11 @@ def move(board, index, current_player = "X", count = 0)
   board[index] = current_player
 
   while count == 0
-    puts"current_player is X"
     count+=1
+    puts"current_player is X"
     while count == 1
       puts"current_player is O"
+      count+=1
     end
   end
 
