@@ -11,16 +11,17 @@ def input_to_index(user_input)
   user_input.to_i - 1
 end
 
-def move(board, index, current_player = "X")
+def move(board, index, current_player = "X", count = 0)
   board[index] = current_player
-count = 0
-  if(count%2 == 0 || count==0)
+
+  if(count%2 == 0)
     puts "Current player O"
     count+=1
   else
     puts "Current player X"
+    count+=1
   end
-  
+
 end
 
 def position_taken?(board, location)
