@@ -14,12 +14,12 @@ end
 def move(board, index, current_player = "X", count = 0)
   board[index] = current_player
 
-  if(count%2 == 0)
-    puts "Current player O"
+  while count == 0
+    puts"current_player is X"
     count+=1
-  else
-    puts "Current player X"
-    count+=1
+    while count == 1
+      puts"current_player is O"
+    end
   end
 
 end
