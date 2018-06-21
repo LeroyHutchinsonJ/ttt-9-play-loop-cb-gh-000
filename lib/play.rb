@@ -16,6 +16,7 @@ def move(board, index, current_player = "X")
   count = 0
   if(count%2 == 0 || count==0)
     puts "Current player O"
+    count+=1
   end
 end
 
